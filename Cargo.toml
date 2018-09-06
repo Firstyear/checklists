@@ -1,0 +1,19 @@
+[package]
+name = "checklists"
+version = "0.1.0"
+authors = ["William Brown <william@blackhats.net.au>"]
+
+[dependencies]
+askama = "0.6"
+
+actix = "0.7"
+actix-web = "0.7"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[build-dependencies]
+askama = "0.6"
+
+
