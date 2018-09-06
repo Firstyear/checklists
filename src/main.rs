@@ -165,6 +165,8 @@ fn main() {
     // Start http server
     server::new(move || {
         App::with_state(AppState::new())
+            // For production
+            .prefix("/list")
             // enable logger
             .middleware(middleware::Logger::default())
             // lists
