@@ -41,6 +41,14 @@ impl<'a> AppState<'a> {
         // Now build our lists
 
         s.db.insert("poleshow", vec![
+            // equipment
+            "eq: X-H1",
+            "eq: X-T10",
+            "eq: 50-140",
+            "eq: 16-55",
+            "eq: UV Filters",
+            "eq: Ear Plugs",
+            "eq: Neck/sholder stap/wrist strap",
             "IBIS off",
             "50-140 OIS on",
             "Aperture to f/3.6 or higher",
@@ -62,6 +70,11 @@ impl<'a> AppState<'a> {
         ]);
 
         s.db.insert("outdoor flash", vec![
+            "eq: flash + umbrella + light stand",
+            "eq: flash trigger",
+            "eq: UV Filter + CPL Filter",
+            "eq: ? tripod",
+            "eq: ? reflector",
             "IBIS off",
             "WB to daylight/shade",
             "WB based on grey card",
@@ -74,6 +87,7 @@ impl<'a> AppState<'a> {
         ]);
 
         s.db.insert("outdoor reflector", vec![
+            "eq: reflector",
             "IBIS off",
             "White reflector bright sun/direct",
             "Silver/Gold for shade or spotlight",
@@ -82,6 +96,13 @@ impl<'a> AppState<'a> {
         ]);
 
         s.db.insert("outdoor pole", vec![
+            "eq: X-H1 + 50-140",
+            "eq: X-T10 + 35 (candid)",
+            "eq: flash + umbrella + light stand",
+            "eq: flash trigger",
+            "eq: UV Filter + CPL Filter",
+            "eq: ? tripod",
+            "eq: ? reflector",
             "IBIS off",
             // from outdoor flash. Can we just copy the vec?
             "WB to daylight/shade",
@@ -103,6 +124,10 @@ impl<'a> AppState<'a> {
         ]);
 
         s.db.insert("food restaurant", vec![
+            "eq: X-H1",
+            "eq: 35",
+            "eq: 16-55",
+            "eq: ? small reflector if available",
             "WB is critically important",
             "F2.5 or greater",
             "IBIS on",
@@ -178,6 +203,6 @@ fn main() {
         .unwrap()
         .start();
 
-    println!("Started http server: 127.0.0.1:8080");
+    println!("Started http server: http://127.0.0.1:8080/list/");
     let _ = sys.run();
 }
