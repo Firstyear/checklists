@@ -50,6 +50,7 @@ impl<'a> AppState<'a> {
             "eq: Ear Plugs",
             "eq: Neck/sholder stap/wrist strap",
             "IBIS off",
+            "Set HIGH only",
             "50-140 OIS off",
             "Dist < 10m: 16-55mm primary",
             "Dist < 10m: Aperture to f/3.6 or higher",
@@ -83,6 +84,7 @@ impl<'a> AppState<'a> {
             "eq: ? tripod",
             "eq: ? reflector",
             "IBIS off",
+            "Set RAW+High",
             "WB to daylight/shade",
             "WB based on grey card",
             "Shutter based on flash sync (180 or 250)",
@@ -100,6 +102,7 @@ impl<'a> AppState<'a> {
             "Silver/Gold for shade or spotlight",
             "WB to ambient no reflector",
             "CPL or UV filter",
+            "Set RAW+High",
         ]);
 
         s.db.insert("outdoor pole", vec![
@@ -110,6 +113,7 @@ impl<'a> AppState<'a> {
             "eq: UV Filter + CPL Filter",
             "eq: ? tripod",
             "eq: ? reflector",
+            "Set RAW+High",
             "IBIS off",
             // from outdoor flash. Can we just copy the vec?
             "WB to daylight/shade",
@@ -135,15 +139,25 @@ impl<'a> AppState<'a> {
             "eq: 35",
             "eq: 16-55",
             "eq: ? small reflector if available",
+            "Set RAW+High",
             "WB is critically important",
             "F2.5 or greater",
             "IBIS on",
             "ISO auto 2 (6400)",
             "Low and High angles (never eye level)",
+            "Close up on details",
             "Rotate plates multiple times for possible angles",
             "Swirl wine to light sources",
             "Use available reflections to create effects (IE bottles)",
             "Low angle room shots",
+            "Use things to block light",
+            "Shoot in shade, sunlight best",
+            "Look for colour",
+            "Add items like cutlery, glasses, cloths, good background",
+            "Add garnishes to dishes",
+            "Dont tilt the camera",
+            "Round plates are better",
+            "Have someone interact with food (spoon etc)",
         ]);
 
         // return our state now
