@@ -1,0 +1,53 @@
+{
+  "name": "389 Commit Checklist",
+  "list": [
+    {
+      "name": "pagure: Pagure Ticket Opened",
+      "desc": "Has a ticket in pagure been opened? https://pagure.io/389-ds-base/new_issue",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "test: Create Test Case",
+      "desc": "Create a test case for the feature or issue to reproduce it.",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "test: Run test with ASAN",
+      "desc": "Run the test case with ASAN",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "git: Self review patch",
+      "desc": "git diff HEAD~1 - look for incorrectly added files, typos etc.",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "git: Rebase to master ",
+      "desc": "Rebase branch to master",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "git: Set reviewers ",
+      "desc": "git commit --amend and set reviewers",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "git/pagure: Push and merge",
+      "desc": "Push and merge the branch",
+      "status": "UNCHECKED",
+      "comment": null
+    },
+    {
+      "name": "pagure: Pagure Ticket Closed",
+      "desc": "Close the issue in pagure",
+      "status": "UNCHECKED",
+      "comment": null
+    }
+  ]
+}

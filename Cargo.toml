@@ -3,7 +3,16 @@ name = "checklists"
 version = "0.1.0"
 authors = ["William Brown <william@blackhats.net.au>"]
 
+[[bin]]
+name = "checklist_server"
+path = "src/main.rs"
+
+[[bin]]
+name = "checklist_cli"
+path = "src/cli.rs"
+
 [dependencies]
+getopts = "0.2"
 askama = "0.6"
 
 actix = "0.7"
