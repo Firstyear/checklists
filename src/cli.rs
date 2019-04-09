@@ -185,6 +185,8 @@ fn main() {
 
         {
             println!("checklist: {}", checklist.name);
+            println!("from: {}", name);
+            println!("--");
             let e = checklist.list.get(step).unwrap();
             println!("{}", e);
         }

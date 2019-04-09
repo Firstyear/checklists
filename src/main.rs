@@ -9,7 +9,7 @@ use askama::Template;
 use actix::prelude::*;
 use actix_web::{
     http, middleware, server, App, HttpResponse, HttpRequest, Path,
-    State,
+    State, fs
 };
 
 use std::collections::BTreeMap;
@@ -215,6 +215,12 @@ fn main() {
             .prefix("/list")
             // enable logger
             .middleware(middleware::Logger::default())
+            .handler(
+                "/static",
+                fs::StaticFiles::new("./static")
+                    .unwrap()
+                    .show_files_listing()
+            )
             // lists
             .resource("/{listname}", |r| r.method(http::Method::GET).with(list_view))
             // index
