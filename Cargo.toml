@@ -12,16 +12,9 @@ path = "src/main.rs"
 name = "checklist_cli"
 path = "src/cli.rs"
 
-[[bin]]
-name = "checklist_tui"
-path = "src/tui.rs"
-
 [dependencies]
 getopts = "0.2"
 askama = "0.6"
-cursive = "0.8"
-# cursive_table_view = "0.5.0"
-rand = "0.4"
 
 actix = "0.7"
 actix-web = "0.7"
