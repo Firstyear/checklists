@@ -57,7 +57,7 @@ impl<'a> AppState<'a> {
             "Dist > 10m: 50-140mm primary",
             "Dist > 10m: Aperture 2.8 to 3.2",
             "Shutter to 1/250 or faster (use mode T)",
-            "ISO to as needed by shutter (1600 - 6400)",
+            "ISO to as needed by shutter (1600 - 6400) - TPG use 5000",
             "White Balance based on stage neutral (grey card)",
             "White Balance alt - incandesent or fluro 2",
             "White Balange - check histograms for even colour, or +r -b for warmth",
