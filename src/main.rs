@@ -77,7 +77,7 @@ impl<'a> AppState<'a> {
             "Get run sheet for image tagging",
             "Get run sheet for group vs single performance",
             "Setup second body for group vs single performance, scout locations",
-            "Group photos send at end of event",
+            "Group photos send at end of event ASAP",
         ]);
 
         s.db.insert("outdoor flash", vec![
